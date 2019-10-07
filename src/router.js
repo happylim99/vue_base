@@ -44,6 +44,11 @@ export default new Router({
       path: '/forms',
       name: 'forms',
       component: () => import('./views/Form.vue')
+    },
+    {
+      path: '/directives',
+      name: 'directives',
+      component: () => import('./views/Directive.vue')
     }
   ]
 })

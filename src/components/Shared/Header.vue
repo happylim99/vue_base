@@ -10,6 +10,7 @@
     <a class="dropdown-item" href="/quotes">Quote</a>
     <a class="dropdown-item" href="/bar-quotes">BarQuote</a>
     <a class="dropdown-item" href="/forms">Forms</a>
+    <a class="dropdown-item" href="/directives">Directives</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">Separated link</a>
   </div>
