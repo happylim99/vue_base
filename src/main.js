@@ -51,11 +51,21 @@ Vue.directive('delay', {
 	}
 })
 
+Vue.filter('toLowercase', function(value) {
+	return value.toLowerCase();
+})
+
+Vue.mixin({
+	created() {
+		// console.log('Global maxin')
+	}
+})
+
 new Vue({
   data: {
     title: 'this is title'
   },
-  router,
-  store,
-  render: h => h(App)
+	router,
+	store,
+    render: h => h(App)
 }).$mount('#app')

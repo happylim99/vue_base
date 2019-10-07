@@ -49,6 +49,16 @@ export default new Router({
       path: '/directives',
       name: 'directives',
       component: () => import('./views/Directive.vue')
-    }
+	},
+	{
+	  path: '/filter',
+	  name: 'filters',
+	  component: () => import('./views/Filter.vue')
+	},
+	{
+	  path: '/mixins',
+	  name: 'mixins',
+	  component: () => import('./views/FruitList.vue')
+	}
   ]
 })
