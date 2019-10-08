@@ -13,6 +13,8 @@
     <a class="dropdown-item" href="/directives">Directives</a>
 	<a class="dropdown-item" href="/filter">Filter</a>
 	<a class="dropdown-item" href="/mixins">Mixins</a>
+	<a class="dropdown-item" href="/animation">Animation</a>
+	<a class="dropdown-item" href="/question">Question</a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">Separated link</a>
   </div>

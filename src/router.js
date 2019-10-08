@@ -59,6 +59,16 @@ export default new Router({
 	  path: '/mixins',
 	  name: 'mixins',
 	  component: () => import('./views/FruitList.vue')
+	},
+	{
+	  path: '/animation',
+	  name: 'animation',
+	  component: () => import('./views/Animation.vue')
+	},
+	{
+	  path: '/question',
+	  name: 'question',
+	  component: () => import('./views/Question.vue')
 	}
   ]
 })
