@@ -4,6 +4,33 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import Home from './views/Home.vue'
+import VueResource from 'vue-resource'
+
+/*
+router.beforeEach((to, from, next) => {
+	alert('main check route')
+	next()
+	//next(false)
+	//next('/')
+	//next({})
+})
+*/
+
+Vue.use(VueResource)
+
+Vue.http.options.root = 'https://vuecli3-37025.firebaseio.com/'
+
+Vue.http.interceptors.push((request, next) => {
+	console.log(request)
+	if(request.method == 'POST') {
+		request.method = 'PUT'
+	}
+	next(
+		response => {
+		response.json = () => { return { messages: response.body} }
+	}
+	)
+})
 
 Vue.config.productionTip = false
 
