@@ -14,6 +14,7 @@
 			<router-link to="/question" tag="li" active-class="active" exact><a>Question</a></router-link>
 			<router-link to="/vue_resource" tag="li" active-class="active" exact><a>Vue Resource</a></router-link>
 			<router-link to="/router_user" tag="li" active-class="active" exact><a>Router</a></router-link>
+			<router-link to="/vuex" tag="li" active-class="active" exact><a>VueX</a></router-link>
 		</ul>
     	<!-- Example single danger button -->
 		<!--

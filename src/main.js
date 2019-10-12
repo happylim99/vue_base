@@ -1,11 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+import {store} from './store/store'
 import './registerServiceWorker'
 import Home from './views/Home.vue'
 import VueResource from 'vue-resource'
-
 /*
 router.beforeEach((to, from, next) => {
 	alert('main check route')

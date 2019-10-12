@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import VueX from './views/VueX.vue'
 //import RouterUser from './views/Router.vue'
 //import RouterUserStart from './components/RouterUser/RouterUserStart.vue'
 //import RouterUserDetails from './components/RouterUser/RouterUserDetails.vue'
@@ -160,6 +161,11 @@ const router = new Router({
 	{
 	  path: '*',
 	  redirect: '/'
+	},
+	{
+	  path: '/vuex',
+	  name: 'vuex',
+	  component: VueX
 	},
   ]
 })
